@@ -148,11 +148,11 @@ OAuth consent) and disconnect flows.
 
 ## Updating smart-llm
 
-The AI layer is the public [`smart-llm`](https://github.com/centeba/smart-llm)
+The AI layer is the public [`smart-llm`](https://github.com/CentebaTech/centeba-smart-llm)
 package, pinned by commit in [`pyproject.toml`](../pyproject.toml):
 
 ```toml
-"smart-llm[db,observability] @ git+https://github.com/centeba/smart-llm@<commit>"
+"smart-llm[db,observability] @ git+https://github.com/CentebaTech/centeba-smart-llm@<commit>"
 ```
 
 To pull upstream fixes, bump `<commit>` to a newer `main` SHA (or a tag) and
