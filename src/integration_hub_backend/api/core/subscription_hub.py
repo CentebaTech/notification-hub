@@ -163,9 +163,9 @@ class SubscriptionHub:
                 await self._reader
             self._reader = None
         with contextlib.suppress(Exception):
-            # redis-py's PubSub.aclose() ships without a return annotation
-            # (inline types), so strict mypy sees an untyped call here.
-            await self._pubsub.aclose()  # type: ignore[no-untyped-call]
+            # Older redis-py ships PubSub.aclose() without a return annotation, so
+            # strict mypy sees an untyped call there; newer releases annotate it.
+            await self._pubsub.aclose()  # type: ignore[no-untyped-call, unused-ignore]
 
 
 # ── Process singleton ────────────────────────────────────────────────────────
