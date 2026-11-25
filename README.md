@@ -2,7 +2,7 @@
 
 A multi-channel **notification service** for Python — email, SMS, and webhooks
 behind one API, with routing rules, delivery history, per-user preferences, and
-an **agentic AI layer** (built on [smart-llm](https://github.com/centeba/smart-llm)).
+an **agentic AI layer** (built on [smart-llm](https://github.com/CentebaTech/centeba-smart-llm)).
 Standalone and dependency-clean (no host-platform coupling).
 
 ## Features
@@ -71,7 +71,7 @@ Each has its own README.
 ## Relationship to smart-llm
 
 The AI layer is **not vendored** — notification-hub depends on the standalone
-[`smart-llm`](https://github.com/centeba/smart-llm) package (pinned by git ref in
+[`smart-llm`](https://github.com/CentebaTech/centeba-smart-llm) package (pinned by git ref in
 [`pyproject.toml`](pyproject.toml)). See the User Guide's "Updating smart-llm" for
 how to bump the pin.
 
